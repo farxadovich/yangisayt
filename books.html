@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Online Books</title>
+  <style>
+   div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+   .p1 {
+  font-family: Cursive;
+}
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+.top-menu {
+  margin: 0 60px;
+  position: relative;
+  background: Gray;
+  box-shadow:
+    inset 1px 0 0 rgba(255,255,255,.1),
+    inset -1px 0 0 rgba(255,255,255,.1),
+    inset 150px 0 150px -150px rgba(255,255,255,.12),
+    inset -150px 0 150px -150px rgba(255,255,255,.12);
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+.top-menu:before {
+  top: 0;
+  border-bottom: 1px dashed rgba(255,255,255,.2);
+}
+.top-menu:after {
+  bottom: 0;
+  border-top: 1px dashed rgba(255,255,255,.2);
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu-main:before,
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 8px;
+  border-top: 18px solid Grey;
+  border-bottom: 18px solid Grey;
+  transform: rotate(360deg);
+  z-index: -1;
+}
+.menu-main:before {
+  left: -30px;
+  border-left: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main:after {
+  right: -30px;
+  border-right: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a.current,
+.menu-main a:hover {background: rgba(0,0,0,.2);}
+@media (max-width: 680px) {
+.top-menu {margin: 0;}
+.menu-main li {
+  display: block;
+  margin-right: 0;
+}
+.menu-main:before,
+.menu-main:after {content: none;}
+.menu-main a {display: block;}
+}
+    body {
+  background-image: url("0_4n2c7dgCfQL4iH-G.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+   p.groove {
+    border-style: groove;
+    background-color: LightGray;
+    border: 6px solid Black;
+    border-radius: 30px;}
+    p.dotted {border-style: dotted;}
+
+    .thumb {
+    text-align: center;
+    }
+
+.thumb img  {
+    border: 2px solid LightGray; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 25px; /* Отступ справа */
+    margin-bottom: 25px; /* Отступ снизу */
+   }
+</style>
+</head>
+
+
+
+<body>
+
+
+<nav class="top-menu">
+  <ul class="menu-main">
+    <li><a href="" class="current">Main</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+</nav><p  class="groove" style="font-size:60px" align="center">Welcome!</p>
+
+<h1 class="p1" style="color:black; background-color:LightGray;">Welcome dear reader! Here you can find books which you like.</h1>
+<hr>
+<p class="p1" style="font-size:30px; background-color:LightGray;" ALIGN="CENTER">BOOKS</p>
+<p class="thumb">
+    <img src="kniga-o-vlasti-nad-soboj-21124404-237x341.jpg"  alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="unnamed.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="unnamed (1).jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="unnamed (2).jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="unnamed (3).jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="ot-odnogo-zajca-179-250.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="5a429fae-84cd-4a62-bfdd-5a9df70deb56.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="1513160080_podsoznanie-mozhet-vse.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="7062203d-7955-4db8-a5c7-dd713fc3a213.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+    <img src="145_1571147787_5da5d00b589ad.jpg" alt="Workplace" usemap="#workmap" width="200" height="300">
+
+</p>
+
+
+
+<map name="workmap">
+  <area shape="default" alt="book" href="book.htm">>
+</map>
+<h2 style="background-color:white">
+    creator @fatkhullaev_b 🚀
+</h2>
+
+</body>
