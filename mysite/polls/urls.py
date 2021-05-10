@@ -1,20 +1,15 @@
 from django.urls import path
 
-from  . import views
-
+from . import views
 
 urlpatterns = [
-
+    # ex: /polls/
     path('', views.index, name='index'),
-
-    path('second/', views.second),
-    path('uch/', views.uch, name='uch'),
-    path('tort/', views.tort, name='tort'),
-    path('besh/', views.besh, name='besh'),
-    path('olti/', views.olti, name='olti'),
-    path('yetti/', views.yetti, name='tetti'),
-    path('sakkiz/', views.sakkiz, name='sakkiz'),
-    path('toqqiz/', views.toqqiz, name='toqqiz'),
-    path('on/', views.on, name='on'),
-
+    # ex: /polls/5/
+    path('<int:question_id>/', views.detail, name='detail'),
+    # ex: /polls/5/results/
+    path('<int:question_id>/results/', views.results, name='results'),
+    # ex: /polls/5/vote/
+    path('<int:question_id>/vote/', views.vote, name='vote'),
+    path('', views.index, name='index'),
 ]
